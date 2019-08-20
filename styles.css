@@ -1,0 +1,217 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url(img/sky.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow-x: hidden;
+}
+.highway {
+  height: 200px;
+  width: 500%;
+  display: block;
+  background-image: url(img/road.jpg);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-repeat: repeat-x;
+  animation: highway 5s linear infinite;
+}
+@keyframes highway {
+  100%{
+    transform: translateX(-3400px);
+  }
+}
+.city {
+  height: 250px;
+  width: 500%;
+  background-image: url(img/city.png);
+  position: absolute;
+  bottom: 200px;
+  left: 0;
+  right: 0;
+  display: block;
+  z-index: 1;
+  background-repeat: repeat-x;
+  animation: city 20s linear infinite;
+}
+@keyframes city {
+  100% {
+    transform: translateX(-1400px);
+  }
+}
+.car {
+  width: 400px;
+  left: 35%;
+  bottom: 100px;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 2;
+}
+.car img {
+  width: 100%;
+  animation: car 1s linear infinite;
+}
+@keyframes car {
+  100% {
+    transform: translateY(-1px);
+  }
+  50% {
+    transform: translateY(1px);
+  }
+  0% {
+    transform: translateY(-1px);
+  }
+}
+
+.lambo {
+  width: 400px;
+  left: 65%;
+  bottom: 100px;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 2;
+}
+.lambo img {
+  width: 100%;
+  animation: lambo 1s linear infinite;
+}
+@keyframes lambo {
+  100% {
+    transform: translateY(-1px);
+  }
+  50% {
+    transform: translateY(1px);
+  }
+  0% {
+    transform: translateY(-1px);
+  }
+}
+
+.gigi {
+  width: 400px;
+  left: 76%;
+  bottom: 125px;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 2;
+}
+@keyframes gigi {
+  100% {
+    transform: translateY(-1px);
+  }
+  50% {
+    transform: translateY(1px);
+  }
+  0% {
+    transform: translateY(-1px);
+  }
+}
+
+.wheel {
+  left: 65%;
+  bottom: 173px;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 2;
+}
+.wheel img {
+  width: 72px;
+  height: 72px;
+  animation: wheel 1s linear infinite;
+}
+.back-wheel {
+  left: -160px;
+  position: absolute;
+}
+.front-wheel {
+  left: 88px;
+  position: absolute;
+}
+@keyframes wheel {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.wheel1 {
+  left: 35%;
+  bottom: 163px;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 2;
+}
+.wheel1 img {
+  width: 72px;
+  height: 72px;
+  animation: wheel1 1s linear infinite;
+}
+.back-wheel1 {
+  left: -152px;
+  position: absolute;
+}
+.front-wheel1 {
+  left: 82px;
+  position: absolute;
+}
+@keyframes wheel1 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.ja {
+  left: 36%;
+  bottom: 187px;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 2;
+}
+.ja img {
+  width: 52px;
+  height: 52px;
+  animation: ja 1s linear infinite;
+}
+@keyframes ja {
+  100% {
+    transform: translateY(-1px);
+  }
+  50% {
+    transform: translateY(1px);
+  }
+  0% {
+    transform: translateY(-1px);
+  }
+}
+.typewriter h1 {
+  font-size: 50px;
+  font-family: monospace;
+  text-align: center;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 150px auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 60% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
